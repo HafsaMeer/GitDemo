@@ -55,6 +55,8 @@ public class Ecommerce_StandAlone_Testcase2 {
 		driver.findElement(By.cssSelector(".btnn")).click();
 		String confirmedMessage=driver.findElement(By.cssSelector(".hero-primary")).getText();
 		Assert.assertTrue(confirmedMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		System.out.println("Thank you for your order");
+		System.out.println("Please come next time.");
 		driver.close();
 		
 	}
